@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block main_block %}
+	{% include 'news_element.html' with n=news %}
+	<a class="btn btn-default btn-block" href="../" role="button">Назад</a>
+{% endblock %}
+
+{% block side_block %}
+	<center><h1>{{news.title}}</h1>
+{% endblock %}
