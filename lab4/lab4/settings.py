@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'my_app',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -114,6 +113,11 @@ USE_L10N = True
 
 USE_TZ = True
 
+# List of created aplications
+MY_APPS = [
+    'my_app'
+]
+INSTALLED_APPS += MY_APPS
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/

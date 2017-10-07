@@ -40,7 +40,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="//127.0.0.1:8000/my_app/">ЛР4</a>
+          <a class="navbar-brand" href="/my_app/">ЛР4</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <form class="navbar-form navbar-right">
@@ -57,7 +57,6 @@
                 <li><a href="#">Настройки</a></li>
                 <li><a href="#">Выйти</a></li>
               </ul>
-              </div>
             </span>
           </form>
         </div><!--/.nav-collapse -->
@@ -66,10 +65,10 @@
 
     <div class="container">
       <div id="main-panel" class="col-sm-8 panels">
-      {% block main_block %}<center>Главная панель здесь{% endblock %}
+      {% block main_block %}<div style="text-align:center">Главная панель здесь</div>{% endblock %}
       </div>
       <div id="side-panel" class="col-sm-3 panels">
-      {% block side_block %}<center>Боковая панель здесь{% endblock %}
+        {% block side_block %}<div style="text-align:center">Боковая панель здесь</div>{% endblock %}
       </div>
     </div><!-- /.container -->
 
